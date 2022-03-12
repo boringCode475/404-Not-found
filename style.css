@@ -1,0 +1,113 @@
+:root {
+    --gray-one: #333333;
+    --gray-two: #4f4f4f;
+    --gray-three: #BDBDBD;
+
+    --header-font: Inconsolata;
+    --Hero-font: "Space Mono";
+    --footer-font: Montserrat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    padding: 1.5em;
+}
+
+h2 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    word-spacing: -10px;
+}
+
+h3 {
+    font-family: var(--header-font);
+    font-size: 24px;
+    letter-spacing: -3px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--gray-two);
+    margin: 20px 0px;
+    line-height: 26.66px;
+}
+
+:is(h2, p, button) {
+    font-family: var(--Hero-font);
+}
+
+:is(h3, h2, button) {
+    font-weight: 700;
+    color: var(--gray-one);
+}
+
+.image-container {
+    width: 286.83px;
+    height: 238px;
+    margin: 60px auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--gray-one);
+    border: none;
+    padding: 1.6em 2.5em;
+    margin: 40px 0px 60px 0px;
+    box-shadow: 
+    1px 1px 2.5px var(--gray-one),
+    -1px -1px 2.5px var(--gray-one);
+    cursor: pointer;
+}
+
+p.footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray-three);
+    font-weight: 700;
+    font-family: var(--footer-font);
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #a1a0a0;
+}
+
+
+@media screen and (min-width: 785px) {
+    .main-container {
+        /* background-color: blue; */
+        display: flex;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+
+    .image-container {
+        flex-basis: 40%;
+        width: 539.22px;
+        height: 447.43px;
+        margin: 0 auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        align-self: center;
+    }
+
+    .text-container {
+        flex-basis: 60%;
+        margin: 40px 20px;
+    }
+}
